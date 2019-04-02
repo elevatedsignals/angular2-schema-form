@@ -1,15 +1,16 @@
 {
   "name": "ngx-schema-form-demo",
   "version": "0.0.0",
+  "main": "dist/index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "ng": "./node_modules/.bin/ng",
+    "start": "./node_modules/.bin/ng serve",
+    "build": "./node_modules/.bin/ng build",
     "copy:schema": "node -e \"var src='./schema/ngx-schema-form-schema.json'; var dest='./dist/schema-form/ngx-schema-form-schema.json'; var fs = require('fs'); if (fs.existsSync(src)) { var data = fs.readFileSync(src, 'utf-8'); fs.writeFileSync(dest, data);}\"",
-    "build:lib": "ng build --prod schema-form && npm run copy:schema",
-    "build-demo": "ng build --prod --base-href /ngx-schema-form/dist/ngx-schema-form/",
-    "test": "ng test schema-form --watch=false",
-    "lint": "ng lint"
+    "build:lib": "./node_modules/.bin/ng build --prod schema-form && npm run copy:schema",
+    "build-demo": "./node_modules/.bin/ng build --prod --base-href /ngx-schema-form/dist/ngx-schema-form/",
+    "test": "./node_modules/.bin/ng test schema-form --watch=false",
+    "lint": "./node_modules/.bin/ng lint"
   },
   "private": true,
   "dependencies": {
@@ -32,7 +33,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.5",
     "@angular-devkit/build-ng-packagr": "~0.10.5",
-    "@angular/cli": "~7.0.5",
+    "@angular/cli": "^7.0.7",
     "@angular/compiler-cli": "^7.0.3",
     "@angular/language-service": "^7.0.3",
     "@types/jasmine": "~2.8.11",
