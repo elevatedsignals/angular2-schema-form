@@ -1,0 +1,26 @@
+import { __decorate, __extends } from "tslib";
+import { Component } from '@angular/core';
+import { ControlWidget } from '../../widget';
+var StringWidget = /** @class */ (function (_super) {
+    __extends(StringWidget, _super);
+    function StringWidget() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    StringWidget.prototype.getInputType = function () {
+        if (!this.schema.widget.id || this.schema.widget.id === 'string') {
+            return 'text';
+        }
+        else {
+            return this.schema.widget.id;
+        }
+    };
+    StringWidget = __decorate([
+        Component({
+            selector: 'sf-string-widget',
+            template: "<input *ngIf=\"this.schema.widget.id ==='hidden'; else notHiddenFieldBlock\"\n  [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n<ng-template #notHiddenFieldBlock>\n<div class=\"widget form-group\">\n    <label [attr.for]=\"id\" class=\"horizontal control-label\">\n    \t{{ schema.title }}\n    </label>\n    <span *ngIf=\"schema.description\" class=\"formHelp\">{{schema.description}}</span>\n    <input [name]=\"name\" [attr.readonly]=\"(schema.widget.id!=='color') && schema.readOnly?true:null\"\n    class=\"text-widget.id textline-widget form-control\"\n    [attr.type]=\"!this.schema.widget.id || this.schema.widget.id === 'string' ? 'text' : this.schema.widget.id\"\n    [attr.id]=\"id\"  [formControl]=\"control\" [attr.placeholder]=\"schema.placeholder\"\n    [attr.maxLength]=\"schema.maxLength || null\"\n    [attr.minLength]=\"schema.minLength || null\"\n    [attr.required]=\"schema.isRequired || null\"\n    [attr.disabled]=\"(schema.widget.id=='color' && schema.readOnly)?true:null\">\n    <input *ngIf=\"(schema.widget.id==='color' && schema.readOnly)\" [attr.name]=\"name\" type=\"hidden\" [formControl]=\"control\">\n</div>\n</ng-template>"
+        })
+    ], StringWidget);
+    return StringWidget;
+}(ControlWidget));
+export { StringWidget };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RyaW5nLndpZGdldC5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC1zY2hlbWEtZm9ybS8iLCJzb3VyY2VzIjpbImxpYi9kZWZhdWx0d2lkZ2V0cy9zdHJpbmcvc3RyaW5nLndpZGdldC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUUxQyxPQUFPLEVBQUUsYUFBYSxFQUFFLE1BQU0sY0FBYyxDQUFDO0FBd0I3QztJQUFrQyxnQ0FBYTtJQUEvQzs7SUFTQSxDQUFDO0lBUEcsbUNBQVksR0FBWjtRQUNJLElBQUksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxFQUFFLElBQUksSUFBSSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsRUFBRSxLQUFLLFFBQVEsRUFBRTtZQUM5RCxPQUFPLE1BQU0sQ0FBQztTQUNqQjthQUFNO1lBQ0gsT0FBTyxJQUFJLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUM7U0FDaEM7SUFDTCxDQUFDO0lBUlEsWUFBWTtRQXRCeEIsU0FBUyxDQUFDO1lBQ1QsUUFBUSxFQUFFLGtCQUFrQjtZQUM1QixRQUFRLEVBQUUsd3BDQWtCRztTQUNkLENBQUM7T0FDVyxZQUFZLENBU3hCO0lBQUQsbUJBQUM7Q0FBQSxBQVRELENBQWtDLGFBQWEsR0FTOUM7U0FUWSxZQUFZIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbmltcG9ydCB7IENvbnRyb2xXaWRnZXQgfSBmcm9tICcuLi8uLi93aWRnZXQnO1xuXG5AQ29tcG9uZW50KHtcbiAgc2VsZWN0b3I6ICdzZi1zdHJpbmctd2lkZ2V0JyxcbiAgdGVtcGxhdGU6IGA8aW5wdXQgKm5nSWY9XCJ0aGlzLnNjaGVtYS53aWRnZXQuaWQgPT09J2hpZGRlbic7IGVsc2Ugbm90SGlkZGVuRmllbGRCbG9ja1wiXG4gIFthdHRyLm5hbWVdPVwibmFtZVwiIHR5cGU9XCJoaWRkZW5cIiBbZm9ybUNvbnRyb2xdPVwiY29udHJvbFwiPlxuPG5nLXRlbXBsYXRlICNub3RIaWRkZW5GaWVsZEJsb2NrPlxuPGRpdiBjbGFzcz1cIndpZGdldCBmb3JtLWdyb3VwXCI+XG4gICAgPGxhYmVsIFthdHRyLmZvcl09XCJpZFwiIGNsYXNzPVwiaG9yaXpvbnRhbCBjb250cm9sLWxhYmVsXCI+XG4gICAgXHR7eyBzY2hlbWEudGl0bGUgfX1cbiAgICA8L2xhYmVsPlxuICAgIDxzcGFuICpuZ0lmPVwic2NoZW1hLmRlc2NyaXB0aW9uXCIgY2xhc3M9XCJmb3JtSGVscFwiPnt7c2NoZW1hLmRlc2NyaXB0aW9ufX08L3NwYW4+XG4gICAgPGlucHV0IFtuYW1lXT1cIm5hbWVcIiBbYXR0ci5yZWFkb25seV09XCIoc2NoZW1hLndpZGdldC5pZCE9PSdjb2xvcicpICYmIHNjaGVtYS5yZWFkT25seT90cnVlOm51bGxcIlxuICAgIGNsYXNzPVwidGV4dC13aWRnZXQuaWQgdGV4dGxpbmUtd2lkZ2V0IGZvcm0tY29udHJvbFwiXG4gICAgW2F0dHIudHlwZV09XCIhdGhpcy5zY2hlbWEud2lkZ2V0LmlkIHx8IHRoaXMuc2NoZW1hLndpZGdldC5pZCA9PT0gJ3N0cmluZycgPyAndGV4dCcgOiB0aGlzLnNjaGVtYS53aWRnZXQuaWRcIlxuICAgIFthdHRyLmlkXT1cImlkXCIgIFtmb3JtQ29udHJvbF09XCJjb250cm9sXCIgW2F0dHIucGxhY2Vob2xkZXJdPVwic2NoZW1hLnBsYWNlaG9sZGVyXCJcbiAgICBbYXR0ci5tYXhMZW5ndGhdPVwic2NoZW1hLm1heExlbmd0aCB8fCBudWxsXCJcbiAgICBbYXR0ci5taW5MZW5ndGhdPVwic2NoZW1hLm1pbkxlbmd0aCB8fCBudWxsXCJcbiAgICBbYXR0ci5yZXF1aXJlZF09XCJzY2hlbWEuaXNSZXF1aXJlZCB8fCBudWxsXCJcbiAgICBbYXR0ci5kaXNhYmxlZF09XCIoc2NoZW1hLndpZGdldC5pZD09J2NvbG9yJyAmJiBzY2hlbWEucmVhZE9ubHkpP3RydWU6bnVsbFwiPlxuICAgIDxpbnB1dCAqbmdJZj1cIihzY2hlbWEud2lkZ2V0LmlkPT09J2NvbG9yJyAmJiBzY2hlbWEucmVhZE9ubHkpXCIgW2F0dHIubmFtZV09XCJuYW1lXCIgdHlwZT1cImhpZGRlblwiIFtmb3JtQ29udHJvbF09XCJjb250cm9sXCI+XG48L2Rpdj5cbjwvbmctdGVtcGxhdGU+YFxufSlcbmV4cG9ydCBjbGFzcyBTdHJpbmdXaWRnZXQgZXh0ZW5kcyBDb250cm9sV2lkZ2V0IHtcblxuICAgIGdldElucHV0VHlwZSgpIHtcbiAgICAgICAgaWYgKCF0aGlzLnNjaGVtYS53aWRnZXQuaWQgfHwgdGhpcy5zY2hlbWEud2lkZ2V0LmlkID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgcmV0dXJuICd0ZXh0JztcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgIHJldHVybiB0aGlzLnNjaGVtYS53aWRnZXQuaWQ7XG4gICAgICAgIH1cbiAgICB9XG59XG4iXX0=

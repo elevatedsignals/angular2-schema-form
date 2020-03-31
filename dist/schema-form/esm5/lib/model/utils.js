@@ -1,0 +1,7 @@
+export function isPresent(o) {
+    return o !== null && o !== undefined;
+}
+export function isBlank(o) {
+    return o === null || o === undefined;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXRpbHMuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtc2NoZW1hLWZvcm0vIiwic291cmNlcyI6WyJsaWIvbW9kZWwvdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxVQUFVLFNBQVMsQ0FBQyxDQUFDO0lBQ3pCLE9BQU8sQ0FBQyxLQUFLLElBQUksSUFBSSxDQUFDLEtBQUssU0FBUyxDQUFDO0FBQ3ZDLENBQUM7QUFFRCxNQUFNLFVBQVUsT0FBTyxDQUFDLENBQUM7SUFDdkIsT0FBTyxDQUFDLEtBQUssSUFBSSxJQUFJLENBQUMsS0FBSyxTQUFTLENBQUM7QUFDdkMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBmdW5jdGlvbiBpc1ByZXNlbnQobykge1xuICByZXR1cm4gbyAhPT0gbnVsbCAmJiBvICE9PSB1bmRlZmluZWQ7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiBpc0JsYW5rKG8pIHtcbiAgcmV0dXJuIG8gPT09IG51bGwgfHwgbyA9PT0gdW5kZWZpbmVkO1xufVxuIl19

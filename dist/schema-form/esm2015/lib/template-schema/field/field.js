@@ -1,0 +1,10 @@
+export var FieldType;
+(function (FieldType) {
+    FieldType["String"] = "string";
+    FieldType["Object"] = "object";
+    FieldType["Array"] = "array";
+    FieldType["Boolean"] = "boolean";
+    FieldType["Integer"] = "integer";
+    FieldType["Number"] = "number";
+})(FieldType || (FieldType = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZmllbGQuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtc2NoZW1hLWZvcm0vIiwic291cmNlcyI6WyJsaWIvdGVtcGxhdGUtc2NoZW1hL2ZpZWxkL2ZpZWxkLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLE1BQU0sQ0FBTixJQUFZLFNBT1g7QUFQRCxXQUFZLFNBQVM7SUFDbkIsOEJBQWlCLENBQUE7SUFDakIsOEJBQWlCLENBQUE7SUFDakIsNEJBQWUsQ0FBQTtJQUNmLGdDQUFtQixDQUFBO0lBQ25CLGdDQUFvQixDQUFBO0lBQ3BCLDhCQUFpQixDQUFBO0FBQ25CLENBQUMsRUFQVyxTQUFTLEtBQVQsU0FBUyxRQU9wQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFZhbGlkYXRvciB9IGZyb20gJy4uLy4uL21vZGVsL3ZhbGlkYXRvcic7XG5cbmV4cG9ydCBlbnVtIEZpZWxkVHlwZSB7XG4gIFN0cmluZyA9ICdzdHJpbmcnLFxuICBPYmplY3QgPSAnb2JqZWN0JyxcbiAgQXJyYXkgPSAnYXJyYXknLFxuICBCb29sZWFuID0gJ2Jvb2xlYW4nLFxuICBJbnRlZ2VyID0gICdpbnRlZ2VyJyxcbiAgTnVtYmVyID0gJ251bWJlcicsXG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgRmllbGQge1xuICBuYW1lOiBzdHJpbmc7XG4gIHJlcXVpcmVkOiBib29sZWFuO1xuICBnZXRTY2hlbWEoKTogYW55O1xuICBnZXRCdXR0b25zKCk6IGFueTtcbiAgZ2V0VmFsaWRhdG9ycygpOiB7IHBhdGg6IHN0cmluZywgdmFsaWRhdG9yOiBWYWxpZGF0b3IgfVtdO1xufVxuXG5cbiJdfQ==
